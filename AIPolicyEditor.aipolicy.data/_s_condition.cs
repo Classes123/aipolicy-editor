@@ -1,6 +1,7 @@
 using System.ComponentModel;
 using System.IO;
 using AIPolicyEditor.aipolicy.data.Conditions;
+using System.Windows.Forms;
 
 namespace AIPolicyEditor.aipolicy.data;
 
@@ -246,6 +247,14 @@ public class _s_condition
 		case _e_condition.c_31:
 		case _e_condition.c_33:
 		case _e_condition.c_40:
+			break;
+
+		default:
+			if (iType >= _e_condition.c_num)
+			{
+				throw new System.InvalidOperationException("Unknown condition " + iType + ":" + (int)iType + " (" + br.BaseStream.Position + ")");
+			}
+
 			break;
 		}
 	}

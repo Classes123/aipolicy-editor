@@ -1,6 +1,8 @@
 using System.ComponentModel;
 using System.IO;
 using AIPolicyEditor.aipolicy.data.Targets;
+using System.Windows.Forms;
+using System;
 
 namespace AIPolicyEditor.aipolicy.data;
 
@@ -111,6 +113,15 @@ public class _s_target
 		case _e_target.t_hate_farthest:
 		case _e_target.t_hate_first_redirected:
 		case _e_target.t_17:
+			break;
+
+		default:
+			if (iType >= _e_target.t_num)
+			{
+				throw new System.InvalidOperationException("Unknown target " + iType + ":" + (int)iType + " (" + br.BaseStream.Position + ")");
+			}
+
+
 			break;
 		}
 	}

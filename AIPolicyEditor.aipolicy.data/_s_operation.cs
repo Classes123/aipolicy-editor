@@ -1,6 +1,7 @@
 using System.ComponentModel;
 using System.IO;
 using AIPolicyEditor.aipolicy.data.Operations;
+using System.Windows.Forms;
 
 namespace AIPolicyEditor.aipolicy.data;
 
@@ -346,7 +347,16 @@ public class _s_operation
 		case _e_operation.o_79:
 			pParam = O_79.Read(br);
 			break;
+
+		default:
+			if (iType >= _e_operation.o_num)
+			{
+				throw new System.InvalidOperationException("Unknown operation " + iType + ":" + (int)iType + " (" + br.BaseStream.Position + ")");
+			}
+
+			break;
 		}
+
 		mTarget.Read(br, dwVersion, listPolicy, listTriggerPtr, listOperation);
 	}
 
