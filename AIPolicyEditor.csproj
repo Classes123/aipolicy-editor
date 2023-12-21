@@ -2,10 +2,11 @@
   <PropertyGroup>
     <AssemblyName>AIPolicyEditor</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>True</UseWindowsForms>
     <TargetFramework>net462</TargetFramework>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -17,4 +18,7 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
+  </ItemGroup>
 </Project>
