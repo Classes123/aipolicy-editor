@@ -118,9 +118,8 @@ public class _s_target
 		default:
 			if (iType >= _e_target.t_num)
 			{
-				throw new System.InvalidOperationException("Unknown target " + iType + ":" + (int)iType + " (" + br.BaseStream.Position + ")");
+				throw new InvalidOperationException("Unknown target " + iType + ":" + (int)iType + " (" + br.BaseStream.Position + ")");
 			}
-
 
 			break;
 		}
