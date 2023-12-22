@@ -116,9 +116,21 @@ public class _s_target
 			break;
 
 		default:
+			if ((int)iType == 20)
+			{
+				pParam = br.ReadBytes(16);
+				break;
+			}
+
+			if ((int)iType == 19)
+			{
+				pParam = null;
+				break;
+			}
+
 			if (iType >= _e_target.t_num)
 			{
-				throw new InvalidOperationException("Unknown target " + iType + ":" + (int)iType + " (" + br.BaseStream.Position + ")");
+				throw new InvalidOperationException("Unknown target " + iType + ":" + (int)iType + " (" + (br.BaseStream.Position - 4) + ")");
 			}
 
 			break;

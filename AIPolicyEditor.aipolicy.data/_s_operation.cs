@@ -2,6 +2,7 @@ using System.ComponentModel;
 using System.IO;
 using AIPolicyEditor.aipolicy.data.Operations;
 using System.Windows.Forms;
+using System.Security.Principal;
 
 namespace AIPolicyEditor.aipolicy.data;
 
@@ -102,9 +103,15 @@ public class _s_operation
 	public _s_target mTarget { get; set; } = new _s_target();
 
 
-	public void Read(BinaryReader br, int dwVersion, int listPolicy, int listTriggerPtr, int listOperation)
+	public void Read(BinaryReader br, int dwVersion, int listPolicy, int listTriggerPtr, int listOperation, bool debug)
 	{
 		iType = (_e_operation)br.ReadInt32();
+
+		if (debug)
+		{
+			System.Console.WriteLine("\t\tOperation type=" + iType + " (" + br.BaseStream.Position + ")");
+		}
+
 		switch (iType)
 		{
 		case _e_operation.o_attact:
@@ -349,9 +356,147 @@ public class _s_operation
 			break;
 
 		default:
+			if ((int)iType == 100)
+			{
+				pParam = br.ReadBytes(8);
+				break;
+			}
+
+			if ((int)iType == 97)
+			{
+				pParam = null;
+				break;
+			}
+
+			if ((int)iType == 98)
+			{
+				pParam = br.ReadBytes(4);
+				break;
+			}
+
+			if ((int)iType == 99)
+			{
+				pParam = br.ReadBytes(80);
+				break;
+			}
+
+			if ((int)iType == 95)
+			{
+				pParam = br.ReadBytes(1);
+				break;
+			}
+
+			if ((int)iType == 92)
+			{
+				pParam = br.ReadBytes(36);
+				break;
+			}
+
+			if ((int)iType == 85)
+			{
+				pParam = br.ReadBytes(28);
+				break;
+			}
+
+			if ((int)iType == 86)
+			{
+				pParam = br.ReadBytes(12);
+				break;
+			}
+
+			if ((int)iType == 89)
+			{
+				pParam = br.ReadBytes(40);
+				break;
+			}
+
+			if ((int)iType == 83)
+			{
+				pParam = br.ReadBytes(44);
+				break;
+			}
+
+			if ((int)iType == 81 || (int)iType == 80)
+			{
+				pParam = br.ReadBytes(24);
+				break;
+			}
+
+			if ((int)iType == 84)
+			{
+				pParam = null;
+				break;
+			}
+
+			if ((int)iType == 87)
+			{
+				pParam = br.ReadBytes(44);
+				break;
+			}
+
+			if ((int)iType == 88)
+			{
+				pParam = br.ReadBytes(12);
+				break;
+			}
+
+			if ((int)iType == 82)
+			{
+				pParam = br.ReadBytes(28);
+				break;
+			}
+
+			if ((int)iType == 94)
+			{
+				pParam = br.ReadBytes(1);
+				break;
+			}
+
+			if ((int)iType == 90)
+			{
+				pParam = br.ReadBytes(16);
+				break;
+			}
+
+			if ((int)iType == 93)
+			{
+				pParam = br.ReadBytes(40);
+				break;
+			}
+
+			if ((int)iType == 91)
+			{
+				pParam = br.ReadBytes(24);
+				break;
+			}
+
+			if ((int)iType == 96)
+			{
+				pParam = br.ReadBytes(8);
+				break;
+			}
+
+			if ((int)iType == 62)
+			{
+				pParam = br.ReadBytes(12); //8 or 12
+				break;
+			}
+
+			if ((int)iType == 101)
+			{
+				pParam = br.ReadBytes(8);
+				break;
+			}
+
+			if ((int)iType == 102)
+			{
+				pParam = br.ReadBytes(8);
+				break;
+			}
+
 			if (iType >= _e_operation.o_num)
 			{
-				throw new System.InvalidOperationException("Unknown operation " + iType + ":" + (int)iType + " (" + br.BaseStream.Position + ")");
+				throw new System.InvalidOperationException("Unknown operation " + iType + ":" + (int)iType + " (" + (br.BaseStream.Position-4) + ")");
 			}
 
 			break;

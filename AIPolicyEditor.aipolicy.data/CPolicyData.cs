@@ -1,3 +1,4 @@
+using System;
 using System.Collections.ObjectModel;
 using System.IO;
 
@@ -11,15 +12,26 @@ public class CPolicyData
 
 	public ObservableCollection<CTriggerData> listTriggerPtr = new ObservableCollection<CTriggerData>();
 
-	public void Read(BinaryReader br, int listPolicy)
+	public void Read(BinaryReader br, int listPolicy, bool debug)
 	{
 		nVersion = br.ReadInt32();
 		uID = br.ReadInt32();
 		int num = br.ReadInt32();
+
+		if (nVersion != 1)
+		{
+			Console.WriteLine("Warning! Possibly invalid ver=" + nVersion + " (" + br.BaseStream.Position + ")");
+		}
+
+		if (debug)
+		{
+			Console.WriteLine("Data v=" + nVersion + "; id=" + uID + "; num=" + num + " (" + br.BaseStream.Position + ")");
+		}
+
 		for (int i = 0; i < num; i++)
 		{
 			CTriggerData cTriggerData = new CTriggerData();
-			cTriggerData.Read(br, listPolicy, i);
+			cTriggerData.Read(br, listPolicy, i, debug);
 			listTriggerPtr.Add(cTriggerData);
 		}
 	}

@@ -16,12 +16,15 @@ public class CPolicyDataManager
 		uVersion = binaryReader.ReadInt32();
 		int num = binaryReader.ReadInt32();
 		listPolicy = new ObservableCollection<CPolicyData>();
+
 		for (int i = 0; i < num; i++)
 		{
 			CPolicyData cPolicyData = new CPolicyData();
-			cPolicyData.Read(binaryReader, i);
+			cPolicyData.Read(binaryReader, i, false);
 			listPolicy.Add(cPolicyData);
 		}
+
+
 		fileStream.Close();
 		binaryReader.Close();
 	}

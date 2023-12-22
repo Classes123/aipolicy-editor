@@ -14,6 +14,8 @@ internal class O_PLAY_ACTION
 
 	public int iPlayTime { get; set; }
 
+	public int unknown_val1 { get; set; }
+
 	public override string ToString()
 	{
 		return string.Format("{0}", "O_PLAY_ACTION");
@@ -26,7 +28,8 @@ internal class O_PLAY_ACTION
 			szActionName = br.ReadBytes(128).ByteArray_to_GbkString(),
 			iLoopCount = br.ReadInt32(),
 			iInterval = br.ReadInt32(),
-			iPlayTime = br.ReadInt32()
+			iPlayTime = br.ReadInt32(),
+			unknown_val1 = br.ReadInt32()
 		};
 	}
 

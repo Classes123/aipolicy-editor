@@ -250,9 +250,45 @@ public class _s_condition
 			break;
 
 		default:
+			if ((int)iType == 41)
+			{
+				pParam = br.ReadBytes(4);
+				break;
+			}
+
+			if ((int)iType == 43)
+			{
+				pParam = br.ReadBytes(4);
+				break;
+			}
+
+			if ((int)iType == 42)
+			{
+				pParam = br.ReadBytes(4);
+				break;
+			}
+
+			if ((int)iType == 44)
+			{
+				pParam = br.ReadBytes(4);
+				break;
+			}
+
+			if ((int)iType == 45)
+			{
+				pParam = null;
+				break;
+			}
+
+			if ((int)iType == 46)
+			{
+				pParam = null;
+				break;
+			}
+
 			if (iType >= _e_condition.c_num)
 			{
-				throw new System.InvalidOperationException("Unknown condition " + iType + ":" + (int)iType + " (" + br.BaseStream.Position + ")");
+				throw new System.InvalidOperationException("Unknown condition " + iType + ":" + (int)iType + " (" + (br.BaseStream.Position - 8) + ")");
 			}
 
 			break;

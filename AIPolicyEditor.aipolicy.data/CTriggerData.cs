@@ -117,7 +117,7 @@ public class CTriggerData
 	public ObservableCollection<_s_operation> listOperation { get; set; } = new ObservableCollection<_s_operation>();
 
 
-	public void Read(BinaryReader br, int listPolicy, int listTriggerPtr)
+	public void Read(BinaryReader br, int listPolicy, int listTriggerPtr, bool debug)
 	{
 		dwVersion = br.ReadInt32();
 		uID = br.ReadInt32();
@@ -127,10 +127,21 @@ public class CTriggerData
 		szName = br.ReadBytes(128).ByteArray_to_GbkString();
 		rootConditon.Read(br, listPolicy, listTriggerPtr);
 		int num = br.ReadInt32();
+
+		if (dwVersion != 40)
+		{
+			Console.WriteLine("Warning. Possibly invalid ver=" + dwVersion + " (" + br.BaseStream.Position + ")");
+		}
+
+		if (debug)
+		{
+			Console.WriteLine("\tTrigger v=" + dwVersion + "; id=" + uID + "; num=" + num + " (" + br.BaseStream.Position + ")");
+		}
+
 		for (int i = 0; i < num; i++)
 		{
 			_s_operation s_operation = new _s_operation();
-			s_operation.Read(br, dwVersion, listPolicy, listTriggerPtr, i);
+			s_operation.Read(br, dwVersion, listPolicy, listTriggerPtr, i, debug);
 			listOperation.Add(s_operation);
 		}
 	}
