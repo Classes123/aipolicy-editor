@@ -20,10 +20,9 @@ public class CPolicyDataManager
 		for (int i = 0; i < num; i++)
 		{
 			CPolicyData cPolicyData = new CPolicyData();
-			cPolicyData.Read(binaryReader, i, false);
+			cPolicyData.Read(binaryReader, i);
 			listPolicy.Add(cPolicyData);
 		}
-
 
 		fileStream.Close();
 		binaryReader.Close();

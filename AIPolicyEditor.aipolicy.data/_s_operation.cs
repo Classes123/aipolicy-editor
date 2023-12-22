@@ -103,15 +103,9 @@ public class _s_operation
 	public _s_target mTarget { get; set; } = new _s_target();
 
 
-	public void Read(BinaryReader br, int dwVersion, int listPolicy, int listTriggerPtr, int listOperation, bool debug)
+	public void Read(BinaryReader br, int dwVersion, int listPolicy, int listTriggerPtr, int listOperation)
 	{
 		iType = (_e_operation)br.ReadInt32();
-
-		if (debug)
-		{
-			System.Console.WriteLine("\t\tOperation type=" + iType + " (" + br.BaseStream.Position + ")");
-		}
-
 		switch (iType)
 		{
 		case _e_operation.o_attact:
