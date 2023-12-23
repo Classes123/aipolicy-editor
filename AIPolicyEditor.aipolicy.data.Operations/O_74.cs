@@ -55,7 +55,7 @@ internal class O_74
 	public object Copy()
 	{
 		O_74 o_ = new O_74();
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 6; i++)
 		{
 			o_.unk1[i] = unk1[i].Copy();
 		}
@@ -69,7 +69,7 @@ internal class O_74
 
 	public bool Search(string str)
 	{
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 6; i++)
 		{
 			if (unk1[i].Search(str))
 			{
