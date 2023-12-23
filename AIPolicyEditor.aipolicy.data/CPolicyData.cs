@@ -1,4 +1,3 @@
-using System;
 using System.Collections.ObjectModel;
 using System.IO;
 
@@ -16,7 +15,7 @@ public class CPolicyData
 	{
 		nVersion = br.ReadInt32();
 		uID = br.ReadInt32();
-		
+
 		int num = br.ReadInt32();
 		for (int i = 0; i < num; i++)
 		{
