@@ -27,7 +27,7 @@ internal class O_80
 
 	public static void Write(BinaryWriter bw, O_80 param)
 	{
-		bw.Write(param.unk1);
+		bw.Write(param.unk1.GbkString_to_ByteArray(16));
         bw.Write(param.iID);
         bw.Write(param.unk2);
 	}

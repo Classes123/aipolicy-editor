@@ -33,7 +33,7 @@ internal class O_83
 
 	public static void Write(BinaryWriter bw, O_83 param)
 	{
-        bw.Write(param.sText);
+        bw.Write(param.sText.GbkString_to_ByteArray(24));
         bw.Write(param.iMobId);
         bw.Write(param.iGlobalVar);
 		bw.Write(param.unk1);
