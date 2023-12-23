@@ -58,6 +58,30 @@ public class MainWindow : Form
 
 	private ToolStripMenuItem toolStripMenuItem_TriggerRemove;
 
+	private ContextMenuStrip contextMenuStrip_rootConditon;
+
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd;
+
+	private ToolStripMenuItem toolStripMenuItem_ConditonRemove;
+
+	private ToolStripMenuItem toolStripMenuItem_Save;
+
+	private ToolStripMenuItem toolStripMenuItem_PolicyCopy;
+
+	private ToolStripMenuItem toolStripMenuItem_TriggerCopy;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationCopy;
+
+	private ToolStripMenuItem toolStripMenuItem_Search;
+
+	public ListBox listBox_listPolicy;
+
+	public ListBox listBox_listTriggerPtr;
+
+	public ListBox listBox_listOperation;
+
+	private TextBox textBox_Condition;
+
 	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_attact;
 
 	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_use_skill;
@@ -174,29 +198,95 @@ public class MainWindow : Form
 
 	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_57;
 
-	private ContextMenuStrip contextMenuStrip_rootConditon;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_58;
 
-	private ToolStripMenuItem toolStripMenuItem_ConditionAdd;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_59;
 
-	private ToolStripMenuItem toolStripMenuItem_ConditonRemove;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_60;
 
-	private ToolStripMenuItem toolStripMenuItem_Save;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_61;
 
-	private ToolStripMenuItem toolStripMenuItem_PolicyCopy;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_62;
 
-	private ToolStripMenuItem toolStripMenuItem_TriggerCopy;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_63;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationCopy;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_64;
 
-	private ToolStripMenuItem toolStripMenuItem_Search;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_65;
 
-	public ListBox listBox_listPolicy;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_66;
 
-	public ListBox listBox_listTriggerPtr;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_67;
 
-	public ListBox listBox_listOperation;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_68;
 
-	private TextBox textBox_Condition;
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_69;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_70;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_71;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_72;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_73;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_74;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_75;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_76;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_77;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_78;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_79;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_80;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_81;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_82;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_83;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_84;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_85;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_86;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_87;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_88;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_89;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_90;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_91;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_92;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_93;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_94;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_95;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_96;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_97;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_98;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_99;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_100;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_101;
+
+	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_102;
 
 	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_time_come;
 
@@ -274,49 +364,23 @@ public class MainWindow : Form
 
 	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_37;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_58;
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_38;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_59;
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_39;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_60;
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_40;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_61;
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_41;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_62;
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_42;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_63;
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_43;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_64;
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_44;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_65;
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_45;
 
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_66;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_67;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_68;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_69;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_70;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_71;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_72;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_73;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_74;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_75;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_76;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_77;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_78;
-
-	private ToolStripMenuItem toolStripMenuItem_OperationAdd_o_79;
+	private ToolStripMenuItem toolStripMenuItem_ConditionAdd_c_46;
 
 	public MainWindow()
 	{
@@ -1168,6 +1232,126 @@ public class MainWindow : Form
 			s_operation.iType = _s_operation._e_operation.o_78;
 			s_operation.pParam = new O_78();
 		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_79)
+		{
+			s_operation.iType = _s_operation._e_operation.o_79;
+			s_operation.pParam = new O_79();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_80)
+		{
+			s_operation.iType = _s_operation._e_operation.o_80;
+			s_operation.pParam = new O_80();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_81)
+		{
+			s_operation.iType = _s_operation._e_operation.o_81;
+			s_operation.pParam = new O_81();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_82)
+		{
+			s_operation.iType = _s_operation._e_operation.o_82;
+			s_operation.pParam = new O_82();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_83)
+		{
+			s_operation.iType = _s_operation._e_operation.o_83;
+			s_operation.pParam = new O_83();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_84)
+		{
+			s_operation.iType = _s_operation._e_operation.o_84;
+			s_operation.pParam = new O_84();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_85)
+		{
+			s_operation.iType = _s_operation._e_operation.o_85;
+			s_operation.pParam = new O_85();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_86)
+		{
+			s_operation.iType = _s_operation._e_operation.o_86;
+			s_operation.pParam = new O_86();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_87)
+		{
+			s_operation.iType = _s_operation._e_operation.o_87;
+			s_operation.pParam = new O_87();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_88)
+		{
+			s_operation.iType = _s_operation._e_operation.o_88;
+			s_operation.pParam = new O_88();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_89)
+		{
+			s_operation.iType = _s_operation._e_operation.o_89;
+			s_operation.pParam = new O_89();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_90)
+		{
+			s_operation.iType = _s_operation._e_operation.o_90;
+			s_operation.pParam = new O_90();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_91)
+		{
+			s_operation.iType = _s_operation._e_operation.o_91;
+			s_operation.pParam = new O_91();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_92)
+		{
+			s_operation.iType = _s_operation._e_operation.o_92;
+			s_operation.pParam = new O_92();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_93)
+		{
+			s_operation.iType = _s_operation._e_operation.o_93;
+			s_operation.pParam = new O_93();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_94)
+		{
+			s_operation.iType = _s_operation._e_operation.o_94;
+			s_operation.pParam = new O_94();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_95)
+		{
+			s_operation.iType = _s_operation._e_operation.o_95;
+			s_operation.pParam = new O_95();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_96)
+		{
+			s_operation.iType = _s_operation._e_operation.o_96;
+			s_operation.pParam = new O_96();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_97)
+		{
+			s_operation.iType = _s_operation._e_operation.o_97;
+			s_operation.pParam = new O_97();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_98)
+		{
+			s_operation.iType = _s_operation._e_operation.o_98;
+			s_operation.pParam = new O_98();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_99)
+		{
+			s_operation.iType = _s_operation._e_operation.o_99;
+			s_operation.pParam = new O_99();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_100)
+		{
+			s_operation.iType = _s_operation._e_operation.o_100;
+			s_operation.pParam = new O_100();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_101)
+		{
+			s_operation.iType = _s_operation._e_operation.o_101;
+			s_operation.pParam = new O_101();
+		}
+		else if (sender == toolStripMenuItem_OperationAdd_o_102)
+		{
+			s_operation.iType = _s_operation._e_operation.o_102;
+			s_operation.pParam = new O_102();
+		}
 		AIPolicy.listPolicy[selectedIndex].listTriggerPtr[selectedIndex2].listOperation.Add(s_operation);
 		int count = AIPolicy.listPolicy[selectedIndex].listTriggerPtr[selectedIndex2].listOperation.Count;
 		listBox_listOperation.Items.Add("[" + count + "] " + AIPolicy.listPolicy[selectedIndex].listTriggerPtr[selectedIndex2].listOperation[count - 1].iType);
@@ -1412,6 +1596,24 @@ public class MainWindow : Form
 		case _s_condition._e_condition.c_40:
 			text = "c_40";
 			break;
+		case _s_condition._e_condition.c_41:
+			text = $"c_41({((C_41)node.mConditon.pParam).unk1})";
+			break;
+		case _s_condition._e_condition.c_42:
+			text = $"c_42({((C_42)node.mConditon.pParam).unk1})";
+			break;
+		case _s_condition._e_condition.c_43:
+			text = $"c_43({((C_43)node.mConditon.pParam).unk1})";
+			break;
+		case _s_condition._e_condition.c_44:
+			text = $"c_44({((C_44)node.mConditon.pParam).unk1})";
+			break;
+		case _s_condition._e_condition.c_45:
+			text = "c_45";
+			break;
+		case _s_condition._e_condition.c_46:
+			text = "c_46";
+			break;
 		}
 		return text2 + text + text3;
 	}
@@ -1526,6 +1728,29 @@ public class MainWindow : Form
 		this.toolStripMenuItem_OperationAdd_o_77 = new System.Windows.Forms.ToolStripMenuItem();
 		this.toolStripMenuItem_OperationAdd_o_78 = new System.Windows.Forms.ToolStripMenuItem();
 		this.toolStripMenuItem_OperationAdd_o_79 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_80 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_81 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_82 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_83 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_84 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_85 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_86 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_87 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_88 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_89 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_90 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_91 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_92 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_93 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_94 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_95 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_96 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_97 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_98 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_99 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_100 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_101 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_OperationAdd_o_102 = new System.Windows.Forms.ToolStripMenuItem();
 		this.toolStripMenuItem_OperationCopy = new System.Windows.Forms.ToolStripMenuItem();
 		this.toolStripMenuItem_OperationRemove = new System.Windows.Forms.ToolStripMenuItem();
 		this.propertyGrid_Operation = new System.Windows.Forms.PropertyGrid();
@@ -1570,6 +1795,15 @@ public class MainWindow : Form
 		this.toolStripMenuItem_ConditionAdd_c_35 = new System.Windows.Forms.ToolStripMenuItem();
 		this.toolStripMenuItem_ConditionAdd_c_36 = new System.Windows.Forms.ToolStripMenuItem();
 		this.toolStripMenuItem_ConditionAdd_c_37 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_ConditionAdd_c_38 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_ConditionAdd_c_39 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_ConditionAdd_c_40 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_ConditionAdd_c_41 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_ConditionAdd_c_42 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_ConditionAdd_c_43 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_ConditionAdd_c_44 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_ConditionAdd_c_45 = new System.Windows.Forms.ToolStripMenuItem();
+		this.toolStripMenuItem_ConditionAdd_c_46 = new System.Windows.Forms.ToolStripMenuItem();
 		this.toolStripMenuItem_ConditonRemove = new System.Windows.Forms.ToolStripMenuItem();
 		this.checkBox_Active = new System.Windows.Forms.CheckBox();
 		this.checkBox_Run = new System.Windows.Forms.CheckBox();
@@ -1641,7 +1875,7 @@ public class MainWindow : Form
 		this.contextMenuStrip_Operation.Items.AddRange(new System.Windows.Forms.ToolStripItem[3] { this.toolStripMenuItem_OperationAdd, this.toolStripMenuItem_OperationCopy, this.toolStripMenuItem_OperationRemove });
 		this.contextMenuStrip_Operation.Name = "contextMenuStrip_Operation";
 		resources.ApplyResources(this.toolStripMenuItem_OperationAdd, "toolStripMenuItem_OperationAdd");
-		this.toolStripMenuItem_OperationAdd.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[80]
+		this.toolStripMenuItem_OperationAdd.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[103]
 		{
 			this.toolStripMenuItem_OperationAdd_o_attact, this.toolStripMenuItem_OperationAdd_o_use_skill, this.toolStripMenuItem_OperationAdd_o_talk, this.toolStripMenuItem_OperationAdd_o_reset_hate_list, this.toolStripMenuItem_OperationAdd_o_run_trigger, this.toolStripMenuItem_OperationAdd_o_stop_trigger, this.toolStripMenuItem_OperationAdd_o_active_trigger, this.toolStripMenuItem_OperationAdd_o_create_timer, this.toolStripMenuItem_OperationAdd_o_kill_timer, this.toolStripMenuItem_OperationAdd_o_flee,
 			this.toolStripMenuItem_OperationAdd_o_set_hate_to_first, this.toolStripMenuItem_OperationAdd_o_set_hate_to_last, this.toolStripMenuItem_OperationAdd_o_set_hate_fifty_percent, this.toolStripMenuItem_OperationAdd_o_skip_operation, this.toolStripMenuItem_OperationAdd_o_active_controller, this.toolStripMenuItem_OperationAdd_o_set_global, this.toolStripMenuItem_OperationAdd_o_revise_global, this.toolStripMenuItem_OperationAdd_o_summon_monster, this.toolStripMenuItem_OperationAdd_o_walk_along, this.toolStripMenuItem_OperationAdd_o_play_action,
@@ -1650,7 +1884,10 @@ public class MainWindow : Form
 			this.toolStripMenuItem_OperationAdd_o_40, this.toolStripMenuItem_OperationAdd_o_41, this.toolStripMenuItem_OperationAdd_o_42, this.toolStripMenuItem_OperationAdd_o_43, this.toolStripMenuItem_OperationAdd_o_44, this.toolStripMenuItem_OperationAdd_o_45, this.toolStripMenuItem_OperationAdd_o_46, this.toolStripMenuItem_OperationAdd_o_47, this.toolStripMenuItem_OperationAdd_o_48, this.toolStripMenuItem_OperationAdd_o_49,
 			this.toolStripMenuItem_OperationAdd_o_50, this.toolStripMenuItem_OperationAdd_o_51, this.toolStripMenuItem_OperationAdd_o_52, this.toolStripMenuItem_OperationAdd_o_53, this.toolStripMenuItem_OperationAdd_o_54, this.toolStripMenuItem_OperationAdd_o_55, this.toolStripMenuItem_OperationAdd_o_56, this.toolStripMenuItem_OperationAdd_o_57, this.toolStripMenuItem_OperationAdd_o_58, this.toolStripMenuItem_OperationAdd_o_59,
 			this.toolStripMenuItem_OperationAdd_o_60, this.toolStripMenuItem_OperationAdd_o_61, this.toolStripMenuItem_OperationAdd_o_62, this.toolStripMenuItem_OperationAdd_o_63, this.toolStripMenuItem_OperationAdd_o_64, this.toolStripMenuItem_OperationAdd_o_65, this.toolStripMenuItem_OperationAdd_o_66, this.toolStripMenuItem_OperationAdd_o_67, this.toolStripMenuItem_OperationAdd_o_68, this.toolStripMenuItem_OperationAdd_o_69,
-			this.toolStripMenuItem_OperationAdd_o_70, this.toolStripMenuItem_OperationAdd_o_71, this.toolStripMenuItem_OperationAdd_o_72, this.toolStripMenuItem_OperationAdd_o_73, this.toolStripMenuItem_OperationAdd_o_74, this.toolStripMenuItem_OperationAdd_o_75, this.toolStripMenuItem_OperationAdd_o_76, this.toolStripMenuItem_OperationAdd_o_77, this.toolStripMenuItem_OperationAdd_o_78, this.toolStripMenuItem_OperationAdd_o_79
+			this.toolStripMenuItem_OperationAdd_o_70, this.toolStripMenuItem_OperationAdd_o_71, this.toolStripMenuItem_OperationAdd_o_72, this.toolStripMenuItem_OperationAdd_o_73, this.toolStripMenuItem_OperationAdd_o_74, this.toolStripMenuItem_OperationAdd_o_75, this.toolStripMenuItem_OperationAdd_o_76, this.toolStripMenuItem_OperationAdd_o_77, this.toolStripMenuItem_OperationAdd_o_78, this.toolStripMenuItem_OperationAdd_o_79,
+			this.toolStripMenuItem_OperationAdd_o_80, this.toolStripMenuItem_OperationAdd_o_81, this.toolStripMenuItem_OperationAdd_o_82, this.toolStripMenuItem_OperationAdd_o_83, this.toolStripMenuItem_OperationAdd_o_84, this.toolStripMenuItem_OperationAdd_o_85, this.toolStripMenuItem_OperationAdd_o_86, this.toolStripMenuItem_OperationAdd_o_87, this.toolStripMenuItem_OperationAdd_o_88, this.toolStripMenuItem_OperationAdd_o_89, 
+			this.toolStripMenuItem_OperationAdd_o_90, this.toolStripMenuItem_OperationAdd_o_91, this.toolStripMenuItem_OperationAdd_o_92, this.toolStripMenuItem_OperationAdd_o_93, this.toolStripMenuItem_OperationAdd_o_94, this.toolStripMenuItem_OperationAdd_o_95, this.toolStripMenuItem_OperationAdd_o_96, this.toolStripMenuItem_OperationAdd_o_97, this.toolStripMenuItem_OperationAdd_o_98, this.toolStripMenuItem_OperationAdd_o_99, 
+			this.toolStripMenuItem_OperationAdd_o_100, this.toolStripMenuItem_OperationAdd_o_101, this.toolStripMenuItem_OperationAdd_o_102
 		});
 		this.toolStripMenuItem_OperationAdd.Name = "toolStripMenuItem_OperationAdd";
 		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_attact, "toolStripMenuItem_OperationAdd_o_attact");
@@ -1893,6 +2130,75 @@ public class MainWindow : Form
 		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_79, "toolStripMenuItem_OperationAdd_o_79");
 		this.toolStripMenuItem_OperationAdd_o_79.Name = "toolStripMenuItem_OperationAdd_o_79";
 		this.toolStripMenuItem_OperationAdd_o_79.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_80, "toolStripMenuItem_OperationAdd_o_80");
+		this.toolStripMenuItem_OperationAdd_o_80.Name = "toolStripMenuItem_OperationAdd_o_80";
+		this.toolStripMenuItem_OperationAdd_o_80.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_81, "toolStripMenuItem_OperationAdd_o_81");
+		this.toolStripMenuItem_OperationAdd_o_81.Name = "toolStripMenuItem_OperationAdd_o_81";
+		this.toolStripMenuItem_OperationAdd_o_81.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_82, "toolStripMenuItem_OperationAdd_o_82");
+		this.toolStripMenuItem_OperationAdd_o_82.Name = "toolStripMenuItem_OperationAdd_o_82";
+		this.toolStripMenuItem_OperationAdd_o_82.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_83, "toolStripMenuItem_OperationAdd_o_83");
+		this.toolStripMenuItem_OperationAdd_o_83.Name = "toolStripMenuItem_OperationAdd_o_83";
+		this.toolStripMenuItem_OperationAdd_o_83.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_84, "toolStripMenuItem_OperationAdd_o_84");
+		this.toolStripMenuItem_OperationAdd_o_84.Name = "toolStripMenuItem_OperationAdd_o_84";
+		this.toolStripMenuItem_OperationAdd_o_84.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_85, "toolStripMenuItem_OperationAdd_o_85");
+		this.toolStripMenuItem_OperationAdd_o_85.Name = "toolStripMenuItem_OperationAdd_o_85";
+		this.toolStripMenuItem_OperationAdd_o_85.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_86, "toolStripMenuItem_OperationAdd_o_86");
+		this.toolStripMenuItem_OperationAdd_o_86.Name = "toolStripMenuItem_OperationAdd_o_86";
+		this.toolStripMenuItem_OperationAdd_o_86.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_87, "toolStripMenuItem_OperationAdd_o_87");
+		this.toolStripMenuItem_OperationAdd_o_87.Name = "toolStripMenuItem_OperationAdd_o_87";
+		this.toolStripMenuItem_OperationAdd_o_87.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_88, "toolStripMenuItem_OperationAdd_o_88");
+		this.toolStripMenuItem_OperationAdd_o_88.Name = "toolStripMenuItem_OperationAdd_o_88";
+		this.toolStripMenuItem_OperationAdd_o_88.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_89, "toolStripMenuItem_OperationAdd_o_89");
+		this.toolStripMenuItem_OperationAdd_o_89.Name = "toolStripMenuItem_OperationAdd_o_89";
+		this.toolStripMenuItem_OperationAdd_o_89.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_90, "toolStripMenuItem_OperationAdd_o_90");
+		this.toolStripMenuItem_OperationAdd_o_90.Name = "toolStripMenuItem_OperationAdd_o_90";
+		this.toolStripMenuItem_OperationAdd_o_90.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_91, "toolStripMenuItem_OperationAdd_o_91");
+		this.toolStripMenuItem_OperationAdd_o_91.Name = "toolStripMenuItem_OperationAdd_o_91";
+		this.toolStripMenuItem_OperationAdd_o_91.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_92, "toolStripMenuItem_OperationAdd_o_92");
+		this.toolStripMenuItem_OperationAdd_o_92.Name = "toolStripMenuItem_OperationAdd_o_92";
+		this.toolStripMenuItem_OperationAdd_o_92.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_93, "toolStripMenuItem_OperationAdd_o_93");
+		this.toolStripMenuItem_OperationAdd_o_93.Name = "toolStripMenuItem_OperationAdd_o_93";
+		this.toolStripMenuItem_OperationAdd_o_93.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_94, "toolStripMenuItem_OperationAdd_o_94");
+		this.toolStripMenuItem_OperationAdd_o_94.Name = "toolStripMenuItem_OperationAdd_o_94";
+		this.toolStripMenuItem_OperationAdd_o_94.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_95, "toolStripMenuItem_OperationAdd_o_95");
+		this.toolStripMenuItem_OperationAdd_o_95.Name = "toolStripMenuItem_OperationAdd_o_95";
+		this.toolStripMenuItem_OperationAdd_o_95.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_96, "toolStripMenuItem_OperationAdd_o_96");
+		this.toolStripMenuItem_OperationAdd_o_96.Name = "toolStripMenuItem_OperationAdd_o_96";
+		this.toolStripMenuItem_OperationAdd_o_96.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_97, "toolStripMenuItem_OperationAdd_o_97");
+		this.toolStripMenuItem_OperationAdd_o_97.Name = "toolStripMenuItem_OperationAdd_o_97";
+		this.toolStripMenuItem_OperationAdd_o_97.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_98, "toolStripMenuItem_OperationAdd_o_98");
+		this.toolStripMenuItem_OperationAdd_o_98.Name = "toolStripMenuItem_OperationAdd_o_98";
+		this.toolStripMenuItem_OperationAdd_o_98.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_99, "toolStripMenuItem_OperationAdd_o_99");
+		this.toolStripMenuItem_OperationAdd_o_99.Name = "toolStripMenuItem_OperationAdd_o_99";
+		this.toolStripMenuItem_OperationAdd_o_99.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_100, "toolStripMenuItem_OperationAdd_o_100");
+		this.toolStripMenuItem_OperationAdd_o_100.Name = "toolStripMenuItem_OperationAdd_o_100";
+		this.toolStripMenuItem_OperationAdd_o_100.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_101, "toolStripMenuItem_OperationAdd_o_101");
+		this.toolStripMenuItem_OperationAdd_o_101.Name = "toolStripMenuItem_OperationAdd_o_101";
+		this.toolStripMenuItem_OperationAdd_o_101.Click += new System.EventHandler(OperationAdd);
+		resources.ApplyResources(this.toolStripMenuItem_OperationAdd_o_102, "toolStripMenuItem_OperationAdd_o_102");
+		this.toolStripMenuItem_OperationAdd_o_102.Name = "toolStripMenuItem_OperationAdd_o_102";
+		this.toolStripMenuItem_OperationAdd_o_102.Click += new System.EventHandler(OperationAdd);
 		resources.ApplyResources(this.toolStripMenuItem_OperationCopy, "toolStripMenuItem_OperationCopy");
 		this.toolStripMenuItem_OperationCopy.Name = "toolStripMenuItem_OperationCopy";
 		this.toolStripMenuItem_OperationCopy.Click += new System.EventHandler(toolStripMenuItem_OperationCopy_Click);
@@ -1914,12 +2220,13 @@ public class MainWindow : Form
 		this.contextMenuStrip_rootConditon.Items.AddRange(new System.Windows.Forms.ToolStripItem[2] { this.toolStripMenuItem_ConditionAdd, this.toolStripMenuItem_ConditonRemove });
 		this.contextMenuStrip_rootConditon.Name = "contextMenuStrip1";
 		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd, "toolStripMenuItem_ConditionAdd");
-		this.toolStripMenuItem_ConditionAdd.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[38]
+		this.toolStripMenuItem_ConditionAdd.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[47]
 		{
 			this.toolStripMenuItem_ConditionAdd_c_time_come, this.toolStripMenuItem_ConditionAdd_c_hp_less, this.toolStripMenuItem_ConditionAdd_c_start_attack, this.toolStripMenuItem_ConditionAdd_c_random, this.toolStripMenuItem_ConditionAdd_c_kill_player, this.toolStripMenuItem_ConditionAdd_c_not, this.toolStripMenuItem_ConditionAdd_c_or, this.toolStripMenuItem_ConditionAdd_c_and, this.toolStripMenuItem_ConditionAdd_c_died, this.toolStripMenuItem_ConditionAdd_c_plus,
 			this.toolStripMenuItem_ConditionAdd_c_minus, this.toolStripMenuItem_ConditionAdd_c_multiply, this.toolStripMenuItem_ConditionAdd_c_divide, this.toolStripMenuItem_ConditionAdd_c_great, this.toolStripMenuItem_ConditionAdd_c_less, this.toolStripMenuItem_ConditionAdd_c_equ, this.toolStripMenuItem_ConditionAdd_c_var, this.toolStripMenuItem_ConditionAdd_c_constant, this.toolStripMenuItem_ConditionAdd_c_be_hurt, this.toolStripMenuItem_ConditionAdd_c_reach_end,
 			this.toolStripMenuItem_ConditionAdd_c_at_history_stage, this.toolStripMenuItem_ConditionAdd_c_history_value, this.toolStripMenuItem_ConditionAdd_c_stop_fight, this.toolStripMenuItem_ConditionAdd_c_local_var, this.toolStripMenuItem_ConditionAdd_c_reach_end_2, this.toolStripMenuItem_ConditionAdd_c_has_filter, this.toolStripMenuItem_ConditionAdd_c_room_index, this.toolStripMenuItem_ConditionAdd_c_player_count_in_radius, this.toolStripMenuItem_ConditionAdd_c_player_count_in_region, this.toolStripMenuItem_ConditionAdd_c_29,
-			this.toolStripMenuItem_ConditionAdd_c_30, this.toolStripMenuItem_ConditionAdd_c_31, this.toolStripMenuItem_ConditionAdd_c_32, this.toolStripMenuItem_ConditionAdd_c_33, this.toolStripMenuItem_ConditionAdd_c_34, this.toolStripMenuItem_ConditionAdd_c_35, this.toolStripMenuItem_ConditionAdd_c_36, this.toolStripMenuItem_ConditionAdd_c_37
+			this.toolStripMenuItem_ConditionAdd_c_30, this.toolStripMenuItem_ConditionAdd_c_31, this.toolStripMenuItem_ConditionAdd_c_32, this.toolStripMenuItem_ConditionAdd_c_33, this.toolStripMenuItem_ConditionAdd_c_34, this.toolStripMenuItem_ConditionAdd_c_35, this.toolStripMenuItem_ConditionAdd_c_36, this.toolStripMenuItem_ConditionAdd_c_37, this.toolStripMenuItem_ConditionAdd_c_38, this.toolStripMenuItem_ConditionAdd_c_39,
+			this.toolStripMenuItem_ConditionAdd_c_40, this.toolStripMenuItem_ConditionAdd_c_41, this.toolStripMenuItem_ConditionAdd_c_42, this.toolStripMenuItem_ConditionAdd_c_43, this.toolStripMenuItem_ConditionAdd_c_44, this.toolStripMenuItem_ConditionAdd_c_45, this.toolStripMenuItem_ConditionAdd_c_46
 		});
 		this.toolStripMenuItem_ConditionAdd.Name = "toolStripMenuItem_ConditionAdd";
 		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_time_come, "toolStripMenuItem_ConditionAdd_c_time_come");
@@ -2074,6 +2381,42 @@ public class MainWindow : Form
 		this.toolStripMenuItem_ConditionAdd_c_37.Name = "toolStripMenuItem_ConditionAdd_c_37";
 		this.toolStripMenuItem_ConditionAdd_c_37.Tag = "37";
 		this.toolStripMenuItem_ConditionAdd_c_37.Click += new System.EventHandler(ConditonAdd);
+		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_38, "toolStripMenuItem_ConditionAdd_c_38");
+		this.toolStripMenuItem_ConditionAdd_c_38.Name = "toolStripMenuItem_ConditionAdd_c_38";
+		this.toolStripMenuItem_ConditionAdd_c_38.Tag = "38";
+		this.toolStripMenuItem_ConditionAdd_c_38.Click += new System.EventHandler(ConditonAdd);
+		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_39, "toolStripMenuItem_ConditionAdd_c_39");
+		this.toolStripMenuItem_ConditionAdd_c_39.Name = "toolStripMenuItem_ConditionAdd_c_39";
+		this.toolStripMenuItem_ConditionAdd_c_39.Tag = "39";
+		this.toolStripMenuItem_ConditionAdd_c_39.Click += new System.EventHandler(ConditonAdd);
+		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_40, "toolStripMenuItem_ConditionAdd_c_40");
+		this.toolStripMenuItem_ConditionAdd_c_40.Name = "toolStripMenuItem_ConditionAdd_c_40";
+		this.toolStripMenuItem_ConditionAdd_c_40.Tag = "40";
+		this.toolStripMenuItem_ConditionAdd_c_40.Click += new System.EventHandler(ConditonAdd);
+		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_41, "toolStripMenuItem_ConditionAdd_c_41");
+		this.toolStripMenuItem_ConditionAdd_c_41.Name = "toolStripMenuItem_ConditionAdd_c_41";
+		this.toolStripMenuItem_ConditionAdd_c_41.Tag = "41";
+		this.toolStripMenuItem_ConditionAdd_c_41.Click += new System.EventHandler(ConditonAdd);
+		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_42, "toolStripMenuItem_ConditionAdd_c_42");
+		this.toolStripMenuItem_ConditionAdd_c_42.Name = "toolStripMenuItem_ConditionAdd_c_42";
+		this.toolStripMenuItem_ConditionAdd_c_42.Tag = "42";
+		this.toolStripMenuItem_ConditionAdd_c_42.Click += new System.EventHandler(ConditonAdd);
+		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_43, "toolStripMenuItem_ConditionAdd_c_43");
+		this.toolStripMenuItem_ConditionAdd_c_43.Name = "toolStripMenuItem_ConditionAdd_c_43";
+		this.toolStripMenuItem_ConditionAdd_c_43.Tag = "43";
+		this.toolStripMenuItem_ConditionAdd_c_43.Click += new System.EventHandler(ConditonAdd);
+		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_44, "toolStripMenuItem_ConditionAdd_c_44");
+		this.toolStripMenuItem_ConditionAdd_c_44.Name = "toolStripMenuItem_ConditionAdd_c_44";
+		this.toolStripMenuItem_ConditionAdd_c_44.Tag = "44";
+		this.toolStripMenuItem_ConditionAdd_c_44.Click += new System.EventHandler(ConditonAdd);
+		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_45, "toolStripMenuItem_ConditionAdd_c_45");
+		this.toolStripMenuItem_ConditionAdd_c_45.Name = "toolStripMenuItem_ConditionAdd_c_45";
+		this.toolStripMenuItem_ConditionAdd_c_45.Tag = "45";
+		this.toolStripMenuItem_ConditionAdd_c_45.Click += new System.EventHandler(ConditonAdd);
+		resources.ApplyResources(this.toolStripMenuItem_ConditionAdd_c_46, "toolStripMenuItem_ConditionAdd_c_46");
+		this.toolStripMenuItem_ConditionAdd_c_46.Name = "toolStripMenuItem_ConditionAdd_c_46";
+		this.toolStripMenuItem_ConditionAdd_c_46.Tag = "46";
+		this.toolStripMenuItem_ConditionAdd_c_46.Click += new System.EventHandler(ConditonAdd);
 		resources.ApplyResources(this.toolStripMenuItem_ConditonRemove, "toolStripMenuItem_ConditonRemove");
 		this.toolStripMenuItem_ConditonRemove.Name = "toolStripMenuItem_ConditonRemove";
 		this.toolStripMenuItem_ConditonRemove.Click += new System.EventHandler(toolStripMenuItem_ConditonRemove_Click);

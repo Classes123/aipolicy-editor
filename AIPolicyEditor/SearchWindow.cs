@@ -42,7 +42,7 @@ public class SearchWindow : Form
 		comboBox_Type2.Items.Clear();
 		if (comboBox_Type1.SelectedIndex == 0)
 		{
-			comboBox_Type2.Items.AddRange(new object[41]
+			comboBox_Type2.Items.AddRange(new object[47]
 			{
 				_s_condition._e_condition.c_time_come,
 				_s_condition._e_condition.c_hp_less,
@@ -84,13 +84,19 @@ public class SearchWindow : Form
 				_s_condition._e_condition.c_37,
 				_s_condition._e_condition.c_38,
 				_s_condition._e_condition.c_39,
-				_s_condition._e_condition.c_40
+				_s_condition._e_condition.c_40,
+				_s_condition._e_condition.c_41,
+				_s_condition._e_condition.c_42,
+				_s_condition._e_condition.c_43,
+				_s_condition._e_condition.c_44,
+				_s_condition._e_condition.c_45,
+				_s_condition._e_condition.c_46,
 			});
 			comboBox_Type2.SelectedIndex = 0;
 		}
 		else if (comboBox_Type1.SelectedIndex == 1)
 		{
-			comboBox_Type2.Items.AddRange(new object[80]
+			comboBox_Type2.Items.AddRange(new object[103]
 			{
 				_s_operation._e_operation.o_attact,
 				_s_operation._e_operation.o_use_skill,
@@ -171,13 +177,36 @@ public class SearchWindow : Form
 				_s_operation._e_operation.o_76,
 				_s_operation._e_operation.o_77,
 				_s_operation._e_operation.o_78,
-				_s_operation._e_operation.o_79
+				_s_operation._e_operation.o_79,
+				_s_operation._e_operation.o_80,
+				_s_operation._e_operation.o_81,
+				_s_operation._e_operation.o_82,
+				_s_operation._e_operation.o_83,
+				_s_operation._e_operation.o_84,
+				_s_operation._e_operation.o_85,
+				_s_operation._e_operation.o_86,
+				_s_operation._e_operation.o_87,
+				_s_operation._e_operation.o_88,
+				_s_operation._e_operation.o_89,
+				_s_operation._e_operation.o_90,
+				_s_operation._e_operation.o_91,
+				_s_operation._e_operation.o_92,
+				_s_operation._e_operation.o_93,
+				_s_operation._e_operation.o_94,
+				_s_operation._e_operation.o_95,
+				_s_operation._e_operation.o_96,
+				_s_operation._e_operation.o_97,
+				_s_operation._e_operation.o_98,
+				_s_operation._e_operation.o_99,
+				_s_operation._e_operation.o_100,
+				_s_operation._e_operation.o_101,
+				_s_operation._e_operation.o_102,
 			});
 			comboBox_Type2.SelectedIndex = 0;
 		}
 		else if (comboBox_Type1.SelectedIndex == 2)
 		{
-			comboBox_Type2.Items.AddRange(new object[19]
+			comboBox_Type2.Items.AddRange(new object[21]
 			{
 				_s_target._e_target.t_hate_first,
 				_s_target._e_target.t_hate_second,
@@ -197,7 +226,9 @@ public class SearchWindow : Form
 				_s_target._e_target.t_15,
 				_s_target._e_target.t_16,
 				_s_target._e_target.t_17,
-				_s_target._e_target.t_18
+				_s_target._e_target.t_18,
+				_s_target._e_target.t_19,
+				_s_target._e_target.t_20,
 			});
 			comboBox_Type2.SelectedIndex = 0;
 		}
