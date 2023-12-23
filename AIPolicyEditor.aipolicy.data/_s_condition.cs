@@ -1,7 +1,6 @@
 using System.ComponentModel;
 using System.IO;
 using AIPolicyEditor.aipolicy.data.Conditions;
-using System.Windows.Forms;
 using System;
 
 namespace AIPolicyEditor.aipolicy.data;
