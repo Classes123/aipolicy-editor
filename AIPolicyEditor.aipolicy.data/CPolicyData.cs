@@ -16,13 +16,8 @@ public class CPolicyData
 	{
 		nVersion = br.ReadInt32();
 		uID = br.ReadInt32();
+		
 		int num = br.ReadInt32();
-
-		if (nVersion != 1)
-		{
-			Console.WriteLine("Warning! Possibly invalid ver=" + nVersion + " (" + br.BaseStream.Position + ")");
-		}
-
 		for (int i = 0; i < num; i++)
 		{
 			CTriggerData cTriggerData = new CTriggerData();

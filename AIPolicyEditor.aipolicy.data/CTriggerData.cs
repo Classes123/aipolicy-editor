@@ -126,13 +126,8 @@ public class CTriggerData
 		bAttackValid = br.ReadBoolean();
 		szName = br.ReadBytes(128).ByteArray_to_GbkString();
 		rootConditon.Read(br, listPolicy, listTriggerPtr);
+		
 		int num = br.ReadInt32();
-
-		if (dwVersion != 40)
-		{
-			Console.WriteLine("Warning. Possibly invalid ver=" + dwVersion + " (" + br.BaseStream.Position + ")");
-		}
-
 		for (int i = 0; i < num; i++)
 		{
 			_s_operation s_operation = new _s_operation();
