@@ -14,7 +14,13 @@ public static class Convert
 	{
 		Encoding encoding = Encoding.GetEncoding("GBK");
 		byte[] array = new byte[length];
-		byte[] bytes = encoding.GetBytes(text);
+
+		byte[] bytes = {};
+		if (text != null)
+		{	
+			bytes = encoding.GetBytes(text);
+		}
+
 		if (array.Length > bytes.Length)
 		{
 			Array.Copy(bytes, array, bytes.Length);
@@ -37,7 +43,13 @@ public static class Convert
 	{
 		Encoding encoding = Encoding.GetEncoding("Unicode");
 		byte[] array = new byte[length];
-		byte[] bytes = encoding.GetBytes(text);
+		
+		byte[] bytes = {};
+		if (text != null)
+		{	
+			bytes = encoding.GetBytes(text);
+		}
+
 		if (array.Length > bytes.Length)
 		{
 			Array.Copy(bytes, array, bytes.Length);
