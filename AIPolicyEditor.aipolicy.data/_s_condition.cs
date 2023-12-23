@@ -2,6 +2,7 @@ using System.ComponentModel;
 using System.IO;
 using AIPolicyEditor.aipolicy.data.Conditions;
 using System.Windows.Forms;
+using System;
 
 namespace AIPolicyEditor.aipolicy.data;
 
@@ -51,6 +52,12 @@ public class _s_condition
 		c_38,
 		c_39,
 		c_40,
+		c_41,
+		c_42,
+		c_43,
+		c_44,
+		c_45,
+		c_46,
 		c_num
 	}
 
@@ -137,6 +144,18 @@ public class _s_condition
 					break;
 				case _e_condition.c_39:
 					pParam = new C_39();
+					break;
+				case _e_condition.c_41:
+					pParam = new C_41();
+					break;
+				case _e_condition.c_42:
+					pParam = new C_42();
+					break;
+				case _e_condition.c_43:
+					pParam = new C_43();
+					break;
+				case _e_condition.c_44:
+					pParam = new C_44();
 					break;
 				default:
 					pParam = null;
@@ -229,6 +248,19 @@ public class _s_condition
 		case _e_condition.c_39:
 			pParam = C_39.Read(br);
 			break;
+		case _e_condition.c_41:
+			pParam = C_41.Read(br);
+			break;
+		case _e_condition.c_42:
+			pParam = C_42.Read(br);
+			break;
+		case _e_condition.c_43:
+			pParam = C_43.Read(br);
+			break;
+		case _e_condition.c_44:
+			pParam = C_44.Read(br);
+			break;
+
 		case _e_condition.c_start_attack:
 		case _e_condition.c_kill_player:
 		case _e_condition.c_not:
@@ -247,48 +279,14 @@ public class _s_condition
 		case _e_condition.c_31:
 		case _e_condition.c_33:
 		case _e_condition.c_40:
+		case _e_condition.c_45:
+		case _e_condition.c_46:
 			break;
 
 		default:
-			if ((int)iType == 41)
-			{
-				pParam = br.ReadBytes(4);
-				break;
-			}
-
-			if ((int)iType == 43)
-			{
-				pParam = br.ReadBytes(4);
-				break;
-			}
-
-			if ((int)iType == 42)
-			{
-				pParam = br.ReadBytes(4);
-				break;
-			}
-
-			if ((int)iType == 44)
-			{
-				pParam = br.ReadBytes(4);
-				break;
-			}
-
-			if ((int)iType == 45)
-			{
-				pParam = null;
-				break;
-			}
-
-			if ((int)iType == 46)
-			{
-				pParam = null;
-				break;
-			}
-
 			if (iType >= _e_condition.c_num)
 			{
-				throw new System.InvalidOperationException("Unknown condition " + iType + ":" + (int)iType + " (" + (br.BaseStream.Position - 8) + ")");
+				throw new InvalidOperationException("Unknown condition " + iType + ":" + (int)iType + " (" + (br.BaseStream.Position - 8) + ")");
 			}
 
 			break;
@@ -370,6 +368,18 @@ public class _s_condition
 		case _e_condition.c_39:
 			C_39.Write(bw, (C_39)pParam);
 			break;
+		case _e_condition.c_41:
+			C_41.Write(bw, (C_41)pParam);
+			break;
+		case _e_condition.c_42:
+			C_42.Write(bw, (C_42)pParam);
+			break;
+		case _e_condition.c_43:
+			C_43.Write(bw, (C_43)pParam);
+			break;
+		case _e_condition.c_44:
+			C_44.Write(bw, (C_44)pParam);
+			break;
 		case _e_condition.c_start_attack:
 		case _e_condition.c_kill_player:
 		case _e_condition.c_not:
@@ -387,6 +397,9 @@ public class _s_condition
 		case _e_condition.c_room_index:
 		case _e_condition.c_31:
 		case _e_condition.c_33:
+		case _e_condition.c_40:
+		case _e_condition.c_45:
+		case _e_condition.c_46:
 			break;
 		}
 	}
@@ -466,6 +479,18 @@ public class _s_condition
 		case _e_condition.c_39:
 			s_condition.pParam = (pParam as C_39).Copy();
 			break;
+		case _e_condition.c_41:
+			s_condition.pParam = (pParam as C_41).Copy();
+			break;
+		case _e_condition.c_42:
+			s_condition.pParam = (pParam as C_42).Copy();
+			break;
+		case _e_condition.c_43:
+			s_condition.pParam = (pParam as C_43).Copy();
+			break;
+		case _e_condition.c_44:
+			s_condition.pParam = (pParam as C_44).Copy();
+			break;
 		}
 		return s_condition;
 	}
@@ -544,6 +569,18 @@ public class _s_condition
 		case _e_condition.c_39:
 			result = (pParam as C_39).Search(str);
 			break;
+		case _e_condition.c_41:
+			result = (pParam as C_41).Search(str);
+			break;
+		case _e_condition.c_42:
+			result = (pParam as C_42).Search(str);
+			break;
+		case _e_condition.c_43:
+			result = (pParam as C_43).Search(str);
+			break;
+		case _e_condition.c_44:
+			result = (pParam as C_44).Search(str);
+			break;
 		}
 		return result;
 	}
@@ -575,6 +612,10 @@ public class _s_condition
 			_e_condition.c_37 => 1, 
 			_e_condition.c_38 => 4, 
 			_e_condition.c_39 => 12, 
+			_e_condition.c_41 => 4,
+			_e_condition.c_42 => 4,
+			_e_condition.c_43 => 4,
+			_e_condition.c_44 => 4,
 			_ => 0, 
 		};
 	}
