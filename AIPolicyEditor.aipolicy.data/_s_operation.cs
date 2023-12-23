@@ -1,8 +1,7 @@
 using System.ComponentModel;
 using System.IO;
 using AIPolicyEditor.aipolicy.data.Operations;
-using System.Windows.Forms;
-using System.Security.Principal;
+using System;
 
 namespace AIPolicyEditor.aipolicy.data;
 
@@ -91,6 +90,29 @@ public class _s_operation
 		o_77,
 		o_78,
 		o_79,
+		o_80,
+		o_81,
+		o_82,
+		o_83,
+		o_84,
+		o_85,
+		o_86,
+		o_87,
+		o_88,
+		o_89,
+		o_90,
+		o_91,
+		o_92,
+		o_93,
+		o_94,
+		o_95,
+		o_96,
+		o_97,
+		o_98,
+		o_99,
+		o_100,
+		o_101,
+		o_102,
 		o_num
 	}
 
@@ -297,6 +319,9 @@ public class _s_operation
 		case _e_operation.o_61:
 			pParam = O_61.Read(br);
 			break;
+		case _e_operation.o_62:
+			pParam = O_62.Read(br);
+			break;
 		case _e_operation.o_63:
 			pParam = O_63.Read(br);
 			break;
@@ -348,149 +373,80 @@ public class _s_operation
 		case _e_operation.o_79:
 			pParam = O_79.Read(br);
 			break;
+		case _e_operation.o_80:
+			pParam = O_80.Read(br);
+			break;
+		case _e_operation.o_81:
+			pParam = O_81.Read(br);
+			break;
+		case _e_operation.o_82:
+			pParam = O_82.Read(br);
+			break;
+		case _e_operation.o_83:
+			pParam = O_83.Read(br);
+			break;
+		case _e_operation.o_84:
+			pParam = O_84.Read(br);
+			break;
+		case _e_operation.o_85:
+			pParam = O_85.Read(br);
+			break;
+		case _e_operation.o_86:
+			pParam = O_86.Read(br);
+			break;
+		case _e_operation.o_87:
+			pParam = O_87.Read(br);
+			break;
+		case _e_operation.o_88:
+			pParam = O_88.Read(br);
+			break;
+		case _e_operation.o_89:
+			pParam = O_89.Read(br);
+			break;
+		case _e_operation.o_90:
+			pParam = O_90.Read(br);
+			break;
+		case _e_operation.o_91:
+			pParam = O_91.Read(br);
+			break;
+		case _e_operation.o_92:
+			pParam = O_92.Read(br);
+			break;
+		case _e_operation.o_93:
+			pParam = O_93.Read(br);
+			break;
+		case _e_operation.o_94:
+			pParam = O_94.Read(br);
+			break;
+		case _e_operation.o_95:
+			pParam = O_95.Read(br);
+			break;
+		case _e_operation.o_96:
+			pParam = O_96.Read(br);
+			break;
+		case _e_operation.o_97:
+			pParam = O_97.Read(br);
+			break;
+		case _e_operation.o_98:
+			pParam = O_98.Read(br);
+			break;
+		case _e_operation.o_99:
+			pParam = O_99.Read(br);
+			break;
+		case _e_operation.o_100:
+			pParam = O_100.Read(br);
+			break;
+		case _e_operation.o_101:
+			pParam = O_101.Read(br);
+			break;
+		case _e_operation.o_102:
+			pParam = O_102.Read(br);
+			break;
 
 		default:
-			if ((int)iType == 100)
-			{
-				pParam = br.ReadBytes(8);
-				break;
-			}
-
-			if ((int)iType == 97)
-			{
-				pParam = null;
-				break;
-			}
-
-			if ((int)iType == 98)
-			{
-				pParam = br.ReadBytes(4);
-				break;
-			}
-
-			if ((int)iType == 99)
-			{
-				pParam = br.ReadBytes(80);
-				break;
-			}
-
-			if ((int)iType == 95)
-			{
-				pParam = br.ReadBytes(1);
-				break;
-			}
-
-			if ((int)iType == 92)
-			{
-				pParam = br.ReadBytes(36);
-				break;
-			}
-
-			if ((int)iType == 85)
-			{
-				pParam = br.ReadBytes(28);
-				break;
-			}
-
-			if ((int)iType == 86)
-			{
-				pParam = br.ReadBytes(12);
-				break;
-			}
-
-			if ((int)iType == 89)
-			{
-				pParam = br.ReadBytes(40);
-				break;
-			}
-
-			if ((int)iType == 83)
-			{
-				pParam = br.ReadBytes(44);
-				break;
-			}
-
-			if ((int)iType == 81 || (int)iType == 80)
-			{
-				pParam = br.ReadBytes(24);
-				break;
-			}
-
-			if ((int)iType == 84)
-			{
-				pParam = null;
-				break;
-			}
-
-			if ((int)iType == 87)
-			{
-				pParam = br.ReadBytes(44);
-				break;
-			}
-
-			if ((int)iType == 88)
-			{
-				pParam = br.ReadBytes(12);
-				break;
-			}
-
-			if ((int)iType == 82)
-			{
-				pParam = br.ReadBytes(28);
-				break;
-			}
-
-			if ((int)iType == 94)
-			{
-				pParam = br.ReadBytes(1);
-				break;
-			}
-
-			if ((int)iType == 90)
-			{
-				pParam = br.ReadBytes(16);
-				break;
-			}
-
-			if ((int)iType == 93)
-			{
-				pParam = br.ReadBytes(40);
-				break;
-			}
-
-			if ((int)iType == 91)
-			{
-				pParam = br.ReadBytes(24);
-				break;
-			}
-
-			if ((int)iType == 96)
-			{
-				pParam = br.ReadBytes(8);
-				break;
-			}
-
-			if ((int)iType == 62)
-			{
-				pParam = br.ReadBytes(12); //8 or 12
-				break;
-			}
-
-			if ((int)iType == 101)
-			{
-				pParam = br.ReadBytes(8);
-				break;
-			}
-
-			if ((int)iType == 102)
-			{
-				pParam = br.ReadBytes(8);
-				break;
-			}
-
 			if (iType >= _e_operation.o_num)
 			{
-				throw new System.InvalidOperationException("Unknown operation " + iType + ":" + (int)iType + " (" + (br.BaseStream.Position-4) + ")");
+				throw new InvalidOperationException("Unknown operation " + iType + ":" + (int)iType + " (" + (br.BaseStream.Position-4) + ")");
 			}
 
 			break;
@@ -693,6 +649,9 @@ public class _s_operation
 		case _e_operation.o_61:
 			O_61.Write(bw, (O_61)pParam);
 			break;
+		case _e_operation.o_62:
+			O_62.Write(bw, (O_62)pParam);
+			break;
 		case _e_operation.o_63:
 			O_63.Write(bw, (O_63)pParam);
 			break;
@@ -743,6 +702,75 @@ public class _s_operation
 			break;
 		case _e_operation.o_79:
 			O_79.Write(bw, (O_79)pParam);
+			break;
+		case _e_operation.o_80:
+			O_80.Write(bw, (O_80)pParam);
+			break;
+		case _e_operation.o_81:
+			O_81.Write(bw, (O_81)pParam);
+			break;
+		case _e_operation.o_82:
+			O_82.Write(bw, (O_82)pParam);
+			break;
+		case _e_operation.o_83:
+			O_83.Write(bw, (O_83)pParam);
+			break;
+		case _e_operation.o_84:
+			O_84.Write(bw, (O_84)pParam);
+			break;
+		case _e_operation.o_85:
+			O_85.Write(bw, (O_85)pParam);
+			break;
+		case _e_operation.o_86:
+			O_86.Write(bw, (O_86)pParam);
+			break;
+		case _e_operation.o_87:
+			O_87.Write(bw, (O_87)pParam);
+			break;
+		case _e_operation.o_88:
+			O_88.Write(bw, (O_88)pParam);
+			break;
+		case _e_operation.o_89:
+			O_89.Write(bw, (O_89)pParam);
+			break;
+		case _e_operation.o_90:
+			O_90.Write(bw, (O_90)pParam);
+			break;
+		case _e_operation.o_91:
+			O_91.Write(bw, (O_91)pParam);
+			break;
+		case _e_operation.o_92:
+			O_92.Write(bw, (O_92)pParam);
+			break;
+		case _e_operation.o_93:
+			O_93.Write(bw, (O_93)pParam);
+			break;
+		case _e_operation.o_94:
+			O_94.Write(bw, (O_94)pParam);
+			break;
+		case _e_operation.o_95:
+			O_95.Write(bw, (O_95)pParam);
+			break;
+		case _e_operation.o_96:
+			O_96.Write(bw, (O_96)pParam);
+			break;
+		case _e_operation.o_97:
+			O_97.Write(bw, (O_97)pParam);
+			break;
+		case _e_operation.o_98:
+			O_98.Write(bw, (O_98)pParam);
+			break;
+		case _e_operation.o_99:
+			O_99.Write(bw, (O_99)pParam);
+			break;
+		case _e_operation.o_100:
+			O_100.Write(bw, (O_100)pParam);
+			break;
+		case _e_operation.o_101:
+			O_101.Write(bw, (O_101)pParam);
+			break;
+		case _e_operation.o_102:
+			O_102.Write(bw, (O_102)pParam);
 			break;
 		}
 		mTarget.Write(bw);
@@ -943,6 +971,9 @@ public class _s_operation
 		case _e_operation.o_61:
 			s_operation.pParam = (pParam as O_61).Copy();
 			break;
+		case _e_operation.o_62:
+			s_operation.pParam = (pParam as O_62).Copy();
+			break;
 		case _e_operation.o_63:
 			s_operation.pParam = (pParam as O_63).Copy();
 			break;
@@ -993,6 +1024,75 @@ public class _s_operation
 			break;
 		case _e_operation.o_79:
 			s_operation.pParam = (pParam as O_79).Copy();
+			break;
+		case _e_operation.o_80:
+			s_operation.pParam = (pParam as O_80).Copy();
+			break;
+		case _e_operation.o_81:
+			s_operation.pParam = (pParam as O_81).Copy();
+			break;
+		case _e_operation.o_82:
+			s_operation.pParam = (pParam as O_82).Copy();
+			break;
+		case _e_operation.o_83:
+			s_operation.pParam = (pParam as O_83).Copy();
+			break;
+		case _e_operation.o_84:
+			s_operation.pParam = (pParam as O_84).Copy();
+			break;
+		case _e_operation.o_85:
+			s_operation.pParam = (pParam as O_85).Copy();
+			break;
+		case _e_operation.o_86:
+			s_operation.pParam = (pParam as O_86).Copy();
+			break;
+		case _e_operation.o_87:
+			s_operation.pParam = (pParam as O_87).Copy();
+			break;
+		case _e_operation.o_88:
+			s_operation.pParam = (pParam as O_88).Copy();
+			break;
+		case _e_operation.o_89:
+			s_operation.pParam = (pParam as O_89).Copy();
+			break;
+		case _e_operation.o_90:
+			s_operation.pParam = (pParam as O_90).Copy();
+			break;
+		case _e_operation.o_91:
+			s_operation.pParam = (pParam as O_91).Copy();
+			break;
+		case _e_operation.o_92:
+			s_operation.pParam = (pParam as O_92).Copy();
+			break;
+		case _e_operation.o_93:
+			s_operation.pParam = (pParam as O_93).Copy();
+			break;
+		case _e_operation.o_94:
+			s_operation.pParam = (pParam as O_94).Copy();
+			break;
+		case _e_operation.o_95:
+			s_operation.pParam = (pParam as O_95).Copy();
+			break;
+		case _e_operation.o_96:
+			s_operation.pParam = (pParam as O_96).Copy();
+			break;
+		case _e_operation.o_97:
+			s_operation.pParam = (pParam as O_97).Copy();
+			break;
+		case _e_operation.o_98:
+			s_operation.pParam = (pParam as O_98).Copy();
+			break;
+		case _e_operation.o_99:
+			s_operation.pParam = (pParam as O_99).Copy();
+			break;
+		case _e_operation.o_100:
+			s_operation.pParam = (pParam as O_100).Copy();
+			break;
+		case _e_operation.o_101:
+			s_operation.pParam = (pParam as O_101).Copy();
+			break;
+		case _e_operation.o_102:
+			s_operation.pParam = (pParam as O_102).Copy();
 			break;
 		}
 		s_operation.mTarget = mTarget.Copy() as _s_target;
@@ -1172,6 +1272,9 @@ public class _s_operation
 		case _e_operation.o_61:
 			flag = (pParam as O_61).Search(str);
 			break;
+		case _e_operation.o_62:
+			flag = (pParam as O_62).Search(str);
+			break;
 		case _e_operation.o_63:
 			flag = (pParam as O_63).Search(str);
 			break;
@@ -1222,6 +1325,75 @@ public class _s_operation
 			break;
 		case _e_operation.o_79:
 			flag = (pParam as O_79).Search(str);
+			break;
+		case _e_operation.o_80:
+			flag = (pParam as O_80).Search(str);
+			break;
+		case _e_operation.o_81:
+			flag = (pParam as O_81).Search(str);
+			break;
+		case _e_operation.o_82:
+			flag = (pParam as O_82).Search(str);
+			break;
+		case _e_operation.o_83:
+			flag = (pParam as O_83).Search(str);
+			break;
+		case _e_operation.o_84:
+			flag = (pParam as O_84).Search(str);
+			break;
+		case _e_operation.o_85:
+			flag = (pParam as O_85).Search(str);
+			break;
+		case _e_operation.o_86:
+			flag = (pParam as O_86).Search(str);
+			break;
+		case _e_operation.o_87:
+			flag = (pParam as O_87).Search(str);
+			break;
+		case _e_operation.o_88:
+			flag = (pParam as O_88).Search(str);
+			break;
+		case _e_operation.o_89:
+			flag = (pParam as O_89).Search(str);
+			break;
+		case _e_operation.o_90:
+			flag = (pParam as O_90).Search(str);
+			break;
+		case _e_operation.o_91:
+			flag = (pParam as O_91).Search(str);
+			break;
+		case _e_operation.o_92:
+			flag = (pParam as O_92).Search(str);
+			break;
+		case _e_operation.o_93:
+			flag = (pParam as O_93).Search(str);
+			break;
+		case _e_operation.o_94:
+			flag = (pParam as O_94).Search(str);
+			break;
+		case _e_operation.o_95:
+			flag = (pParam as O_95).Search(str);
+			break;
+		case _e_operation.o_96:
+			flag = (pParam as O_96).Search(str);
+			break;
+		case _e_operation.o_97:
+			flag = (pParam as O_97).Search(str);
+			break;
+		case _e_operation.o_98:
+			flag = (pParam as O_98).Search(str);
+			break;
+		case _e_operation.o_99:
+			flag = (pParam as O_99).Search(str);
+			break;
+		case _e_operation.o_100:
+			flag = (pParam as O_100).Search(str);
+			break;
+		case _e_operation.o_101:
+			flag = (pParam as O_101).Search(str);
+			break;
+		case _e_operation.o_102:
+			flag = (pParam as O_102).Search(str);
 			break;
 		}
 		if (!flag)
