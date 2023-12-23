@@ -1,7 +1,6 @@
 using System.ComponentModel;
 using System.IO;
 using AIPolicyEditor.aipolicy.data.Targets;
-using System.Windows.Forms;
 using System;
 
 namespace AIPolicyEditor.aipolicy.data;
@@ -30,6 +29,8 @@ public class _s_target
 		t_16,
 		t_17,
 		t_18,
+		t_19,
+		t_20,
 		t_num
 	}
 
@@ -62,6 +63,9 @@ public class _s_target
 					break;
 				case _e_target.t_18:
 					pParam = new T_18();
+					break;
+				case _e_target.t_20:
+					pParam = new T_20();
 					break;
 				default:
 					pParam = null;
@@ -99,6 +103,9 @@ public class _s_target
 		case _e_target.t_18:
 			pParam = T_18.Read(br);
 			break;
+		case _e_target.t_20:
+			pParam = T_20.Read(br);
+			break;
 		case _e_target.t_hate_first:
 		case _e_target.t_hate_second:
 		case _e_target.t_hate_others:
@@ -113,21 +120,10 @@ public class _s_target
 		case _e_target.t_hate_farthest:
 		case _e_target.t_hate_first_redirected:
 		case _e_target.t_17:
+		case _e_target.t_19:
 			break;
 
 		default:
-			if ((int)iType == 20)
-			{
-				pParam = br.ReadBytes(16);
-				break;
-			}
-
-			if ((int)iType == 19)
-			{
-				pParam = null;
-				break;
-			}
-
 			if (iType >= _e_target.t_num)
 			{
 				throw new InvalidOperationException("Unknown target " + iType + ":" + (int)iType + " (" + (br.BaseStream.Position - 4) + ")");
@@ -157,6 +153,9 @@ public class _s_target
 		case _e_target.t_18:
 			T_18.Write(bw, (T_18)pParam);
 			break;
+		case _e_target.t_20:
+			T_20.Write(bw, (T_20)pParam);
+			break;
 		}
 	}
 
@@ -181,6 +180,9 @@ public class _s_target
 		case _e_target.t_18:
 			s_target.pParam = (pParam as T_18).Copy();
 			break;
+		case _e_target.t_20:
+			s_target.pParam = (pParam as T_20).Copy();
+			break;
 		}
 		return s_target;
 	}
@@ -204,6 +206,9 @@ public class _s_target
 			break;
 		case _e_target.t_18:
 			result = (pParam as T_18).Search(str);
+			break;
+		case _e_target.t_20:
+			result = (pParam as T_20).Search(str);
 			break;
 		}
 		return result;
